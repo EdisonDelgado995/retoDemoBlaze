@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0.min.js"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity and Cucumber Quick Start</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="da40895a1ee776745f0664953c887701af4ccb76e003e1852be0e3c62b798ce4.html">Compra Demoblaze</a></span>
+                > <span class="truncate-60"><a
+                    href="104a9ef4e24a122c6ae34c9e27e8a6f3aebaadab4c32f00b056e00b25fbc7d51.html">Compra de productos en Demoblaze </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 18-02-2025 06:29</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Compra En Demoblaze </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="34658a1663fcf042bd7acb3325affbe4e647c8acd84d0228be2f52e1381e61b9.html">10 To 30 Seconds
+                                        (Duration)
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Compra de productos en Demoblaze
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="c2c98741c0d364a40303bd31fd542d3e7a0228df1d8559a9048de6c766a247b3.png" title=" Dado que el 'usuario' visualiza el cat&aacute;logo de Demoblaze" width="0"/>
+                <img src="c2c98741c0d364a40303bd31fd542d3e7a0228df1d8559a9048de6c766a247b3.png" title=" usuario opens the browser at https://www.demoblaze.com/" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" Dado que el 'usuario' visualiza el cat&aacute;logo de Demoblaze (completed)" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" Cuando se a&ntilde;ade el producto de tipo 'Laptops' de referencia 'Sony vaio i7'" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" Anadir carrito anadir producto" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" usuario clicks on Elemento Laptops" width="0"/>
+                <img src="7ebbf0c3060b0a67f763642839b7cc1b7ae1120b0ca7e52a69fded15a77f1aaf.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="7ebbf0c3060b0a67f763642839b7cc1b7ae1120b0ca7e52a69fded15a77f1aaf.png" title=" usuario clicks on Elemento Sony vaio i7" width="0"/>
+                <img src="feb537dadbdfaff26c5c85a35644d27bbd574cc6ff3b972c05313be5b43fa722.png" title=" usuario clicks on Elemento Sony vaio i7 (completed)" width="0"/>
+                <img src="feb537dadbdfaff26c5c85a35644d27bbd574cc6ff3b972c05313be5b43fa722.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="b3c84883c40baefc8a3a778ca2aff863614d4dc65bbc6caa86821ce287cc0d47.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="b3c84883c40baefc8a3a778ca2aff863614d4dc65bbc6caa86821ce287cc0d47.png" title=" usuario clicks on Elemento Add to cart" width="0"/>
+                <img src="c696ecfad78911b39935ebacb69e9adaac1d9970ed328ca72301a97b93a0c9bf.png" title=" usuario clicks on Elemento Add to cart (completed)" width="0"/>
+                <img src="c696ecfad78911b39935ebacb69e9adaac1d9970ed328ca72301a97b93a0c9bf.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="c696ecfad78911b39935ebacb69e9adaac1d9970ed328ca72301a97b93a0c9bf.png" title=" Usuario interaccion ventana emergente" width="0"/>
+                <img src="3803a3253f9ec8efdbccf557699ac166777d3d4729de425cddd67871f65a7fa5.png" title=" Usuario interaccion ventana emergente (completed)" width="0"/>
+                <img src="3803a3253f9ec8efdbccf557699ac166777d3d4729de425cddd67871f65a7fa5.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="3803a3253f9ec8efdbccf557699ac166777d3d4729de425cddd67871f65a7fa5.png" title=" usuario clicks on Boton inicio" width="0"/>
+                <img src="f3cef62b33e781a577da79d1f902ea8b1c14818cb76f54eecdff9880369172cc.png" title=" usuario clicks on Boton inicio (completed)" width="0"/>
+                <img src="f3cef62b33e781a577da79d1f902ea8b1c14818cb76f54eecdff9880369172cc.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" Y se a&ntilde;ade el producto de tipo 'Monitors' de referencia 'ASUS Full HD'" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" Anadir carrito anadir producto" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="8af8937d29b900689167cb4ee0f4fe6bfd5c0a75d00a3bdd6d50cb1fddcd4a54.png" title=" usuario clicks on Elemento Monitors" width="0"/>
+                <img src="5341dc95f7abab61a2830ad06b4f59762c851679d84057263135828656b079d1.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="5341dc95f7abab61a2830ad06b4f59762c851679d84057263135828656b079d1.png" title=" usuario clicks on Elemento ASUS Full HD" width="0"/>
+                <img src="feb537dadbdfaff26c5c85a35644d27bbd574cc6ff3b972c05313be5b43fa722.png" title=" usuario clicks on Elemento ASUS Full HD (completed)" width="0"/>
+                <img src="feb537dadbdfaff26c5c85a35644d27bbd574cc6ff3b972c05313be5b43fa722.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="9d998ddb16f48a4aa65a86e5fbd6a0f8e8d97d8a70b0a07bbc752b65fd254d83.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="9d998ddb16f48a4aa65a86e5fbd6a0f8e8d97d8a70b0a07bbc752b65fd254d83.png" title=" usuario clicks on Elemento Add to cart" width="0"/>
+                <img src="c49a240c8b0effcb005fe20de84096c2cc0f16dfe9137e297d5036e878d1d21d.png" title=" usuario clicks on Elemento Add to cart (completed)" width="0"/>
+                <img src="c49a240c8b0effcb005fe20de84096c2cc0f16dfe9137e297d5036e878d1d21d.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="5f99941cd2c462b0217216a5abaa574903d315395688aa6a7bdd0e4f51844355.png" title=" Usuario interaccion ventana emergente" width="0"/>
+                <img src="5f99941cd2c462b0217216a5abaa574903d315395688aa6a7bdd0e4f51844355.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="5f99941cd2c462b0217216a5abaa574903d315395688aa6a7bdd0e4f51844355.png" title=" usuario clicks on Boton inicio" width="0"/>
+                <img src="541ede5174589fbeeb2c2b49f21711923ef053bf37dc264ab69eaf08360bd3e8.png" title=" usuario clicks on Boton inicio (completed)" width="0"/>
+                <img src="541ede5174589fbeeb2c2b49f21711923ef053bf37dc264ab69eaf08360bd3e8.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="db6aeea4ea2b369868886e0a3347acf60b8f5690ca63e0292d2267a61d2570a0.png" title=" Anadir carrito anadir producto (completed)" width="0"/>
+                <img src="db6aeea4ea2b369868886e0a3347acf60b8f5690ca63e0292d2267a61d2570a0.png" title=" Y se a&ntilde;ade el producto de tipo 'Monitors' de referencia 'ASUS Full HD' (completed)" width="0"/>
+                <img src="50cb8187033daf1b477e2b73c2985ede1b94d43a97342e323d7dda887a8f382d.png" title=" Y se confirma la compra de los productos" width="0"/>
+                <img src="50cb8187033daf1b477e2b73c2985ede1b94d43a97342e323d7dda887a8f382d.png" title=" Confirmacion compra confirmar compra" width="0"/>
+                <img src="50cb8187033daf1b477e2b73c2985ede1b94d43a97342e323d7dda887a8f382d.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="50cb8187033daf1b477e2b73c2985ede1b94d43a97342e323d7dda887a8f382d.png" title=" usuario clicks on Boton carrito" width="0"/>
+                <img src="e48d9fa8865f926ca921fc76d96656cc317e33c824e862d12d74b692b9de1308.png" title=" usuario clicks on Boton carrito (completed)" width="0"/>
+                <img src="e48d9fa8865f926ca921fc76d96656cc317e33c824e862d12d74b692b9de1308.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="821e14a06b9f0def5020822b78093bfb643fb0ac8a511ca5e36a6c0f7575bb10.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="821e14a06b9f0def5020822b78093bfb643fb0ac8a511ca5e36a6c0f7575bb10.png" title=" usuario clicks on Boton comprar" width="0"/>
+                <img src="d1d17b2f0ea6e661672b9ff6350585678452f75c26b08482ca7a8e8b94d78f3b.png" title=" usuario clicks on Boton comprar (completed)" width="0"/>
+                <img src="d1d17b2f0ea6e661672b9ff6350585678452f75c26b08482ca7a8e8b94d78f3b.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="e399eddbbb3e1ae93c2e730b981d8e01d95bf825664aae583b7e91aaa597814c.png" title=" usuario enters 'Edison Delgado' into Cuadro de texto nombre" width="0"/>
+                <img src="a132eb29915c319fe092bf3a79a6ef29df212bebb4931c2f79d387eb4a5c3bed.png" title=" usuario enters 'Edison Delgado' into Cuadro de texto nombre (completed)" width="0"/>
+                <img src="a132eb29915c319fe092bf3a79a6ef29df212bebb4931c2f79d387eb4a5c3bed.png" title=" usuario enters 'Colombia' into Cuadro de texto pa&iacute;s" width="0"/>
+                <img src="5899f1cca329e3dc52d5b5d833f0ba186a322a89d9f601640e36ed78551a8f3e.png" title=" usuario enters 'Colombia' into Cuadro de texto pa&iacute;s (completed)" width="0"/>
+                <img src="5899f1cca329e3dc52d5b5d833f0ba186a322a89d9f601640e36ed78551a8f3e.png" title=" usuario enters 'Bogot&aacute;' into Cuadro de texto ciudad" width="0"/>
+                <img src="a87c79a0867d273ffaf26cfd11a1ad4d0b924f81ffcad2c4b9330133e04f8ac8.png" title=" usuario enters 'Bogot&aacute;' into Cuadro de texto ciudad (completed)" width="0"/>
+                <img src="a87c79a0867d273ffaf26cfd11a1ad4d0b924f81ffcad2c4b9330133e04f8ac8.png" title=" usuario enters '5306589458' into Cuadro de texto tarjeta de cr&eacute;dito" width="0"/>
+                <img src="128b81ff16c9a95054f3356c6559d44b66112c97535bd40c7a1c238741d7c705.png" title=" usuario enters '5306589458' into Cuadro de texto tarjeta de cr&eacute;dito (completed)" width="0"/>
+                <img src="128b81ff16c9a95054f3356c6559d44b66112c97535bd40c7a1c238741d7c705.png" title=" usuario enters '02' into Cuadro de texto mes" width="0"/>
+                <img src="bd0c4b943864b3301e12398d7abce67e2eef0fe4b3231b63a010100117cb023e.png" title=" usuario enters '02' into Cuadro de texto mes (completed)" width="0"/>
+                <img src="bd0c4b943864b3301e12398d7abce67e2eef0fe4b3231b63a010100117cb023e.png" title=" usuario enters '2025' into Cuadro de texto a&ntilde;o" width="0"/>
+                <img src="84d10c0b36c478ad6b3a8b44afb0031b088994c9690802ac8d3412613d9eac5a.png" title=" usuario enters '2025' into Cuadro de texto a&ntilde;o (completed)" width="0"/>
+                <img src="db5403d43c25cb75a17eb5ef6faa3d06c324d90c4b50fad6e3b866d2e410cc26.png" title=" Usuario interacciones compra" width="0"/>
+                <img src="db5403d43c25cb75a17eb5ef6faa3d06c324d90c4b50fad6e3b866d2e410cc26.png" title=" usuario clicks on Boton confirmar compra" width="0"/>
+                <img src="1e2c95e1465fb5e75a1817cd6442df21b22e204e9b1f0b392abd990c9f36a50e.png" title=" usuario clicks on Boton confirmar compra (completed)" width="0"/>
+                <img src="1e2c95e1465fb5e75a1817cd6442df21b22e204e9b1f0b392abd990c9f36a50e.png" title=" Usuario interacciones compra (completed)" width="0"/>
+                <img src="f88fe114440d619d095f5fe1f0a3139ba5b7c73d62ce9985f86dd04faa517fb9.png" title=" Confirmacion compra confirmar compra (completed)" width="0"/>
+                <img src="f88fe114440d619d095f5fe1f0a3139ba5b7c73d62ce9985f86dd04faa517fb9.png" title=" Y se confirma la compra de los productos (completed)" width="0"/>
+
+                <img src="9d324cdff612d2360406d24ee91609fcc9b076308d5f90620ec11ad343acc0c6.png" title=" Entonces se recibe confirmación de la compra con valor '1020': <span class='success-color'>SUCCESS</span>" width="0"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 4.2.16</span>
+</div>
+</body>
+</html>

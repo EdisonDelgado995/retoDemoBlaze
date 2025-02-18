@@ -1,0 +1,26 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¢«–Èüÿÿÿÿ
+d
+java:S2094"BRemove this empty class, write its code or make it an "interface".(¯€’îûÿÿÿÿ8‘ì‹ÆÑ2
+]	java:S125"<This block of commented-out lines of code should be removed.(şåîÅøÿÿÿÿ8”ì‹ÆÑ2
+a
+java:S1128"DRemove this unused import 'co.com.DemoBlaze.maps.ElementosCatalogo'.(¿ÓŒ…8¢–‡ÆÑ2
+c
+java:S1128"GRemove this unused import 'net.serenitybdd.core.annotations.findby.By'.(ÜÁèp8â—‡ÆÑ2
+_
+java:S1128"=Remove this unused import 'net.serenitybdd.screenplay.Actor'.(ÖÔœ”ùÿÿÿÿ8ã—‡ÆÑ2
+b
+java:S1128"@Remove this unused import 'net.serenitybdd.screenplay.Question'.(è­‹ûüÿÿÿÿ8—ì‹ÆÑ2
+h
+java:S1128"FRemove this unused import 'net.serenitybdd.screenplay.questions.Text'.(ùŠ¨ÿÿÿÿÿ8ã—‡ÆÑ2
+`
+java:S1128">Remove this unused import 'net.serenitybdd.screenplay.actors'.(›ş¹ôşÿÿÿÿ8ã—‡ÆÑ2
+o
+java:S1128	"MRemove this unused import 'net.serenitybdd.screenplay.questions.TextContent'.(ÔÄÆ–şÿÿÿÿ8ä—‡ÆÑ2
+h
+java:S1128
+"FRemove this unused import 'net.serenitybdd.screenplay.targets.Target'.(Ä¡í¹ÿÿÿÿÿ8å—‡ÆÑ2
+W
+java:S1128":Remove this unused import 'org.openqa.selenium.WebDriver'.(ñšÿÀ8å—‡ÆÑ2
+{
+java:S1128"YRemove this unused import 'co.com.DemoBlaze.maps.ElementosCatalogo.MENSAJE_CONFIRMACION'.(Ğá­ÿÿÿÿÿ8å—‡ÆÑ2

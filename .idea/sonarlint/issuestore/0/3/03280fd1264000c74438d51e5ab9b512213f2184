@@ -1,0 +1,20 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(È¸½ïûÿÿÿÿ
+f
+java:S2259"IA "NullPointerException" could be thrown; "assertThat()" can return null.(î¾ö›8á¨†ÆÑ2
+I
+java:S2201",The return value of "contains" must be used.(î¾ö›8†èƒÆÑ2
+Q
+java:S1172#"4Remove this unused method parameter "valorElemento".(€óŸ8Õ˜ÆÑ2
+H
+java:S1168$"+Return an empty collection instead of null.(¥¹ï8î¨†ÆÑ2
+_
+java:S1128"=Remove this unused import 'net.serenitybdd.screenplay.Actor'.(ÖÔœ”ùÿÿÿÿ8ğ¨ÖÆÑ2
+K
+java:S1128	".Remove this unused import 'java.util.Objects'.(¼¸õ›8ğ¨ÖÆÑ2
+j
+java:S1128"MRemove this unused import 'net.serenitybdd.screenplay.GivenWhenThen.seeThat'.(îÚÏÅ8±€…ÆÑ2
+g
+java:S1128"JRemove this unused import 'net.serenitybdd.screenplay.targets.Target.the'.(àïø8ñ¨ÖÆÑ2
+d
+java:S1128"BRemove this unused import 'org.hamcrest.MatcherAssert.assertThat'.(÷º‹Ùÿÿÿÿÿ8±€…ÆÑ2
